@@ -149,3 +149,37 @@ li {
     line-height: 1.5;
     z-index: 10;
 }
+
+#reserveImage {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Gallery Section */
+.avacadoToast {grid-area: avacadoToast;}
+.outsideTable {grid-area: outsideTable;}
+.galleryCard {grid-area: galleryCard;}
+.pinkWig {grid-area: pinkWig;}
+.palmierImg {grid-area: palmierImg;}
+.latte {grid-area: latte;}
+.igCard {grid-area: igCard;}
+.eggAvacado {grid-area: eggAvacado;}
+.menuCard {grid-area: menuCard;}
+.buildingFront {grid-area: buildingFront;}
+.crossiant {grid-area: crossiant;}
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galleryGridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+}
+
