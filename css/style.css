@@ -259,6 +259,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .specialtyCard {
@@ -284,4 +285,55 @@ li {
     font-weight: 200;
     font-size: 20px;
     justify-content: space-between;
+}
+
+/* Testimonials */
+.testTitle{
+    font-family: 'Lobster Two', 'Open Sans', 'sans-serif';
+    color: #660018;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    margin: 25px 0px;
+}
+.testimonialScroll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.testimonialScroll::-webkit-scrollbar {
+    width: 0;
+}
+
+.testCard {
+    min-width: 320px;
+    background-color: #97C29A;
+    margin: 10px;
+    width: 330px;
+    height: 480px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.testCard img {
+    max-width: 100%;
+    height: 275px;
+
+}
+
+.cardContainer {
+    font-family: 'Josefin Sans', 'Open Sans', 'sans-serif';
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.cardContainer h4 {
+    font-weight: 400;
+    text-align: justify;
+}
+
+.cardContainer p {
+    text-align: right;
 }
