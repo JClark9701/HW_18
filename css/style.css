@@ -16,6 +16,10 @@ header h1 {
     color: #660018;
 }
 
+#hamburger {
+    display: none;
+}
+
 ul {
     list-style-type: none;
     text-decoration: none;
@@ -351,7 +355,7 @@ footer {
     display: grid;
     align-items: center;
     grid-template-columns: 90px auto auto auto auto;
-    grid-auto-columns: min-content;
+
 }
 
 .logo img{
@@ -391,4 +395,140 @@ footer {
 .socials img{
     padding: 10px;
     align-items: flex-end;
+}
+
+.hrsInfoMobile, .contactMobile, .hoursGridMobile {
+    display: none;
+}
+
+/* Resonpsive for Mobile */
+@media only screen and (max-width: 600px) {
+    /* Nav */
+    #navBar {display: none;}
+    #socIcon {display: none;}
+    #hamburger {display: flex;}
+
+    /* Hero */
+    #heroText {
+        width: 100%;
+        height: 80%;
+    }
+
+    #cardText {
+        width: 250px;
+        padding: 10px;
+        position: absolute;
+        left: 20%;
+        right: 25%;
+        background-color: #660018;
+        color: white;
+        box-shadow: 5px 5px 15px grey;
+        font-family: 'Josefin Sans', 'Open Sans', 'sans-serif';
+        font-weight: 100;
+        line-height: 1.5;
+    }
+
+    #heroFlexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #card {
+        margin-top: 110px;
+        margin-left: 115px;
+    }
+
+    #reserveImage {width: 100%;}
+
+    /* Gallery Section */
+    .avacadoToast {grid-area: avacadoToast;}
+    .outsideTable {grid-area: outsideTable;}
+    .galleryCard {grid-area: galleryCard;}
+    .pinkWig {grid-area: pinkWig;}
+    .palmierImg {grid-area: palmier}
+    .latte {grid-area: latte;}
+    .igCard {grid-area: igCard;}
+    .eggAvacado {grid-area: eggAvacado;}
+    .menuCard {grid-area: menuCard;}
+    .buildingFront {grid-area: buildingFront;}
+    .crossiant {grid-area: crossiant;}
+
+    .galleryGridContainer {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        grid-template-areas: "avacadoToast avacadoToast"
+        "avacadoToast avacadoToast"
+        "outsideTable galleryCard"
+        "outsideTable pinkWig"
+        "palmier latte"
+        "igCard eggAvacado"
+        "buildingFront buildingFront"
+        "crossiant menuCard";
+    }
+    
+
+
+    .galleryImg {
+        width: 100%;
+    }
+
+    /* Specialty */
+    .specialtyFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .specialtyCard {
+       margin-bottom: 50px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: auto;
+        text-align: center;
+    }
+
+    .footerGridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 30%;
+        margin-left: 155px;
+    }
+
+    .nameAndAddress, .hrContactTitle, .hrsInfo {
+        text-align: center;
+    }
+
+    .hrsInfo {
+        display: none;
+    }
+
+    .hrsInfoMobile, .contactMobile {
+        display: grid;
+        font-family: 'Josefin Sans', 'Open Sans', 'sans-serif';
+        font-weight: 200;
+        line-height: 1.2;
+        font-style: normal;
+    }
+
+    .hrContactTitle h1 {
+        font-family: 'Lobster Two', 'Open Sans', 'sans-serif';
+        font-style: italic;
+    }
 }
