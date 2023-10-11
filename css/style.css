@@ -152,7 +152,7 @@ li {
 
 #reserveImage {
     display: block;
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
@@ -162,6 +162,8 @@ li {
 /* Gallery Section */
 .galleryGridContainer {
     display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     justify-content: center;
@@ -250,4 +252,36 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Specialtiy Items Section */
+.specialtyFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.specialtyCard {
+    width: 350px;
+    background-color: #FBDAE0;
+    padding: 30px;
+    text-align: center;
+}
+
+.specialtyCard h2 {
+    font-family: 'Lobster Two', 'Open Sans', 'sans-serif';
+    font-style: italic;
+    color: #29000A;
+}
+
+.specialGrid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: column;
+    text-align: left;
+    font-family: 'Josefin Sans', 'Open Sans', 'sans-serif';
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: 20px;
+    justify-content: space-between;
 }
