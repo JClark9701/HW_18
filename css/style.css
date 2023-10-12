@@ -508,16 +508,13 @@ footer {
 
     .logo {
         width: 30%;
-        margin-left: 155px;
+        margin-left: 135px;
     }
 
     .nameAndAddress, .hrContactTitle, .hrsInfo {
         text-align: center;
     }
 
-    .hrsInfo {
-        display: none;
-    }
 
     .hrsInfoMobile, .contactMobile {
         display: grid;
